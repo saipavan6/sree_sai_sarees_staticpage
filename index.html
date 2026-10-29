@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Sri Sai Sarees &amp; Fancy Cloth Store, Kondapur Yapa</title>
+<meta name="description" content="Sarees, matching centre, kangan hall and readymade dresses at low prices in Kondapur, Yapa. Open daily 7 am to 8 pm.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,wght@0,500;1,500&family=Outfit:wght@400;500;600&family=Noto+Sans+Telugu:wght@500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#FBF7FD;--surface:#FFFFFF;--text:#22142F;--muted:#66597A;--line:#E6DCEF;
+  --rani:#C81F66;--emerald:#0B6B5A;--gold:#D9A441;--hero:#1B0F2B;
+  box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#140C1F;--surface:#1F1530;--text:#F4EEFA;--muted:#B9ADCB;--line:#382A4C;
+  --rani:#F26AA0;--emerald:#34B5A1;--hero:#0F0818;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#140C1F;--surface:#1F1530;--text:#F4EEFA;--muted:#B9ADCB;--line:#382A4C;
+  --rani:#F26AA0;--emerald:#34B5A1;--hero:#0F0818;color-scheme:dark}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font:400 1.0625rem/1.65 "Outfit",system-ui,sans-serif}
+h1,h2,h3{font-family:"Bodoni Moda",Georgia,serif;font-weight:500;margin:0;line-height:1.1}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--gold);outline-offset:3px}
+.wrap{max-width:1100px;margin:0 auto;padding:0 22px}
+.btn{display:inline-block;padding:13px 26px;border-radius:999px;font-weight:600;text-decoration:none;border:2px solid transparent;cursor:pointer;font-family:inherit;font-size:1rem}
+.btn.gold{background:var(--gold);color:#22142F}
+.btn.line{border-color:rgba(255,255,255,.55);color:#fff}
+.btn.rani{background:var(--rani);color:#fff}
+.btn:hover{filter:brightness(1.08)}
+
+/* HERO */
+.hero{background:var(--hero);color:#fff;position:relative;overflow:hidden}
+.bar{background:var(--gold);color:#22142F;text-align:center;font-size:.95rem;padding:7px 14px;font-weight:500}
+nav.top{display:flex;justify-content:space-between;align-items:center;padding:20px 0;gap:14px;flex-wrap:wrap}
+.brand{font-family:"Bodoni Moda",serif;font-style:italic;font-size:1.5rem;text-decoration:none}
+nav.top div a{margin-left:22px;text-decoration:none;opacity:.85;font-weight:500}
+nav.top div a:hover{opacity:1;color:var(--gold)}
+.hero-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:30px;align-items:end;padding:36px 0 0}
+.hero-copy{padding-bottom:64px}
+.te{font-family:"Noto Sans Telugu",sans-serif;color:var(--gold);margin:0 0 14px;font-size:1.2rem}
+.hero h1{font-size:clamp(2.6rem,7vw,5rem);font-style:italic}
+.hero h1 span{display:block;font-style:normal;color:var(--gold)}
+.hero p{max-width:30rem;color:#D9CFE8;margin:22px 0 30px}
+.cta{display:flex;gap:12px;flex-wrap:wrap}
+.arches{display:flex;gap:14px;align-items:flex-end;height:430px}
+.arch{flex:1;border:3px solid var(--gold);border-bottom:0;border-radius:999px 999px 0 0;position:relative}
+.arch:nth-child(1){height:66%;background:repeating-linear-gradient(135deg,#0B6B5A 0 12px,#0E8A74 12px 24px)}
+.arch:nth-child(2){height:100%;background:linear-gradient(170deg,#C81F66,#5B1A6E)}
+.arch:nth-child(3){height:80%;background:radial-gradient(circle at 50% 30%,#D9A441 0 8px,transparent 9px) 0 0/30px 30px,#7A1236}
+.arch::after{content:"";position:absolute;left:0;right:0;bottom:0;height:16px;background:repeating-linear-gradient(90deg,var(--gold) 0 12px,transparent 12px 24px)}
+
+/* MARQUEE */
+.marquee{background:var(--rani);color:#fff;overflow:hidden;white-space:nowrap;padding:14px 0}
+.marquee div{display:inline-flex;animation:slide 32s linear infinite}
+.marquee span{font-family:"Bodoni Moda",serif;font-style:italic;font-size:1.35rem;padding:0 22px;display:inline-flex;align-items:center;gap:44px}
+.marquee span::after{content:"";width:9px;height:9px;background:var(--gold);transform:rotate(45deg)}
+@keyframes slide{to{transform:translateX(-50%)}}
+
+section{padding:72px 0}
+h2{font-size:clamp(2rem,5vw,3rem);margin-bottom:10px}
+.sub{color:var(--muted);max-width:36rem;margin:0 0 28px}
+
+/* COLLECTIONS */
+.chips{display:flex;gap:10px;margin-bottom:30px;flex-wrap:wrap}
+.chip{padding:9px 20px;border-radius:999px;border:1.5px solid var(--line);background:var(--surface);color:var(--text);font:500 1rem "Outfit",sans-serif;cursor:pointer}
+.chip[aria-pressed="true"]{background:var(--emerald);border-color:var(--emerald);color:#fff}
+.grid{display:grid;gap:26px;grid-template-columns:repeat(auto-fill,minmax(235px,1fr))}
+.card{display:flex;flex-direction:column}
+.sw{aspect-ratio:4/5;border-radius:999px 999px 14px 14px;border:2px solid var(--gold);overflow:hidden}
+.sw img{width:100%;height:100%;object-fit:cover;display:block}
+.shopimg{width:100%;max-height:220px;object-fit:cover;border-radius:12px;margin-bottom:14px;display:block}
+.card h3{font-size:1.35rem;margin:16px 0 4px}
+.card p{margin:0 0 12px;color:var(--muted);font-size:.98rem;flex:1}
+.ask{align-self:flex-start;color:var(--rani);font-weight:600;text-decoration:none;border-bottom:2px solid currentColor}
+
+/* OCCASIONS */
+.band{background:var(--surface);border-block:1px solid var(--line)}
+.occ{display:grid;gap:18px;grid-template-columns:repeat(auto-fit,minmax(230px,1fr))}
+.occ div{border-left:4px solid var(--gold);padding:4px 0 4px 18px}
+.occ h3{font-size:1.4rem;color:var(--emerald);margin-bottom:6px}
+.occ p{margin:0;color:var(--muted)}
+
+/* VISIT */
+.visit{display:grid;grid-template-columns:1fr 1fr;gap:26px}
+.box{background:var(--surface);border:1px solid var(--line);border-radius:18px;padding:26px}
+.box h3{font-size:1.5rem;margin-bottom:12px}
+.box p{margin:6px 0}
+table{width:100%;border-collapse:collapse}
+td{padding:7px 0;border-bottom:1px dashed var(--line)}
+td:last-child{text-align:right;color:var(--muted)}
+.mapbox{border:2px solid var(--gold);border-radius:18px;overflow:hidden;margin-bottom:26px;height:340px;background:var(--surface)}
+.mapbox iframe{width:100%;height:100%;border:0;display:block}
+footer{background:var(--hero);color:#CFC4E0;text-align:center;padding:30px 20px;font-size:.95rem}
+footer b{font-family:"Bodoni Moda",serif;font-style:italic;font-weight:500;color:#fff;font-size:1.2rem}
+
+.float{position:fixed;right:18px;bottom:calc(18px + env(safe-area-inset-bottom,0px));z-index:20;background:#1FA855;color:#fff;border-radius:999px;padding:13px 20px;font-weight:600;text-decoration:none;box-shadow:0 8px 24px rgba(0,0,0,.28)}
+
+@media (max-width:780px){
+  .hero-grid{grid-template-columns:1fr;padding-top:10px}
+  .hero-copy{padding-bottom:30px}
+  .arches{height:300px}
+  .visit{grid-template-columns:1fr}
+  nav.top div a{margin:0 18px 0 0}
+  section{padding:54px 0}
+}
+@media (prefers-reduced-motion:reduce){.marquee div{animation:none}html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+
+<div class="hero">
+  <div class="bar">Open every day, 7 am to 8 pm, in Kondapur, Yapa. Shop in the store only: no online orders or delivery.</div>
+  <div class="wrap">
+    <nav class="top" aria-label="Main">
+      <a class="brand" href="#top">Sri Sai Sarees</a>
+      <div><a href="#collections">Collections</a><a href="#occasions">Occasions</a><a href="#visit">Visit</a></div>
+    </nav>
+    <div class="hero-grid" id="top">
+      <div class="hero-copy">
+        <p class="te" lang="te">శ్రీ సాయి సారీస్ &amp; ఫ్యాన్సీ క్లాత్ స్టోర్</p>
+        <h1>Sarees for every occasion.<span>Dresses for every day.</span></h1>
+        <p>Sarees, matching centre, kangan hall and readymade dresses, all under one roof at low prices. Sri Sai Sarees &amp; Fancy Cloth Store, Kondapur, Yapa. Come in, touch the fabric, take your time.</p>
+        <div class="cta">
+          <a class="btn gold" data-wa href="#">Chat on WhatsApp</a>
+          <a class="btn line" data-call href="#">Call the store</a>
+        </div>
+      </div>
+      <div class="arches" role="img" aria-label="Three arches in emerald, rani pink and maroon fabric with gold borders">
+        <div class="arch"></div><div class="arch"></div><div class="arch"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="marquee" aria-hidden="true"><div id="mq"></div></div>
+
+<main>
+<div class="wrap">
+  <section id="collections">
+    <h2>Shop the collection</h2>
+    <p class="sub">Everything is in the store, where you can see and feel the fabric before you buy. We do not sell online or deliver.</p>
+    <div class="chips" role="group" aria-label="Filter collection">
+      <button class="chip" data-f="all" aria-pressed="true">All</button>
+      <button class="chip" data-f="saree" aria-pressed="false">Sarees</button>
+      <button class="chip" data-f="ready" aria-pressed="false">Readymade</button>
+      <button class="chip" data-f="fancy" aria-pressed="false">Matching &amp; bangles</button>
+    </div>
+    <div class="grid" id="grid"></div>
+  </section>
+</div>
+
+<div class="band">
+  <div class="wrap">
+    <section id="occasions">
+      <h2>Shop by occasion</h2>
+      <div class="occ">
+        <div><h3>Weddings</h3><p>Bridal silks, lehengas and gifts for the family.</p></div>
+        <div><h3>Festivals</h3><p>Ugadi, Dasara, Diwali and every pooja in between.</p></div>
+        <div><h3>Everyday</h3><p>Soft cotton sarees and easy kurti sets for daily wear.</p></div>
+        <div><h3>Gifting</h3><p>Pick a saree or suit piece and we will pack it neatly.</p></div>
+      </div>
+    </section>
+  </div>
+</div>
+
+<div class="wrap">
+  <section id="visit">
+    <h2>Visit the store</h2>
+    <p class="sub">Walk in any day of the week. We sell in the store only, with no online orders or delivery.</p>
+    <div class="mapbox" id="mapbox"></div>
+    <div class="visit">
+      <div class="box">
+        <img class="shopimg" src="images/shop-front.jpg" alt="Front of Sri Sai Sarees and Fancy Cloth Store" loading="lazy" onerror="this.remove()">
+        <h3>Find us</h3>
+        <p id="addr"></p>
+        <p>Phone: <a id="phone" href="#"></a> or <a id="phone2" href="#"></a></p>
+        <div class="cta" style="margin-top:16px">
+          <a class="btn rani" data-wa href="#">WhatsApp</a>
+          <a class="btn rani" id="map" href="#" target="_blank" rel="noopener" style="background:transparent;color:var(--rani);border-color:var(--rani)">Get directions</a>
+        </div>
+      </div>
+      <div class="box">
+        <h3>Opening hours</h3>
+        <table>
+          <tr><td>Every day</td><td>7:00 am to 8:00 pm</td></tr>
+          
+          
+        </table>
+      </div>
+    </div>
+  </section>
+</div>
+</main>
+
+<footer><b>Sri Sai Sarees &amp; Fancy Cloth Store</b><br>© <span id="yr"></span> All rights reserved.</footer>
+<a class="float" data-wa href="#" aria-label="Chat on WhatsApp">WhatsApp us</a>
+
+<script>
+/* Edit these values to personalise the site */
+var STORE={phone:"919493394315",phoneShow:"94933 94315",phone2:"919441460745",phone2Show:"94414 60745",address:"Sri Sai Sarees & Fancy Cloth Store, Main Road, Kondapur, Yapa, Kasipet, Mancherial, Telangana. Opposite Telangana Grameena Bank.",mapUrl:"https://maps.app.goo.gl/Gxom3c33jcbFTF6A9",mapEmbed:"https://www.google.com/maps?q=Sri+Sai+Sarees+and+Fancy+Cloth+Store+Kondapur+Yapa+Kasipet+Mancherial+Telangana&output=embed"};
+var ITEMS=[
+ {n:"Silk sarees",t:"saree",d:"Weddings, poojas and family functions.",bg:"linear-gradient(160deg,#7A1236,#D9A441)"},
+ {n:"Matching centre",t:"fancy",d:"Match your saree with blouse pieces and accessories.",bg:"repeating-linear-gradient(90deg,#1B3A8C 0 10px,#F4EFE4 10px 14px,#C81F66 14px 24px)"},
+ {n:"Cotton sarees",t:"saree",d:"Light and soft for everyday wear.",bg:"repeating-linear-gradient(90deg,#F6F0E4 0 16px,#0B6B5A 16px 20px)"},
+ {n:"Party sarees",t:"saree",d:"Georgette and net with festive work.",bg:"linear-gradient(160deg,#C81F66,#5B1A6E)"},
+ {n:"Bridal sarees",t:"saree",d:"Rich borders in traditional colours.",bg:"radial-gradient(circle at 50% 50%,#D9A441 0 7px,transparent 8px) 0 0/28px 28px,#8B0F2A"},
+ {n:"Kurti sets",t:"ready",d:"Kurti, pant and dupatta, ready to wear.",bg:"linear-gradient(160deg,#0B6B5A,#4FB3A5)"},
+ {n:"Salwar suits",t:"ready",d:"Stitched and unstitched in many sizes.",bg:"repeating-linear-gradient(45deg,#F28FB3 0 10px,#fff 10px 20px)"},
+ {n:"Lehenga & half sarees",t:"ready",d:"For functions and girls’ ceremonies.",bg:"linear-gradient(160deg,#D9A441,#C81F66)"},
+ {n:"Kids’ wear",t:"ready",d:"Frocks and festival outfits for children.",bg:"linear-gradient(160deg,#2B3A8C,#7C5CD6)"},
+ {n:"Kangan hall",t:"fancy",d:"Glass and fancy bangles in every colour.",bg:"repeating-radial-gradient(circle at 50% 50%,#D9A441 0 6px,#C81F66 6px 12px)"}
+];
+function wa(text){return "https://wa.me/"+STORE.phone+"?text="+encodeURIComponent(text||"Hello, I saw your website. I would like to know about your sarees and dresses.")}
+function slug(s){return s.toLowerCase().replace(/[^a-z0-9]+/g,"-").replace(/^-+|-+$/g,"")}
+function render(f){
+  var g=document.getElementById("grid");g.innerHTML="";
+  ITEMS.filter(function(i){return f==="all"||i.t===f}).forEach(function(i){
+    var c=document.createElement("div");c.className="card";
+    c.innerHTML='<div class="sw" style="background:'+i.bg+'"><img src="images/'+slug(i.n)+'.jpg" alt="'+i.n+'" loading="lazy" onerror="this.remove()"></div><h3>'+i.n+'</h3><p>'+i.d+'</p>';
+    g.appendChild(c);
+  });
+}
+document.querySelectorAll(".chip").forEach(function(b){b.onclick=function(){
+  document.querySelectorAll(".chip").forEach(function(x){x.setAttribute("aria-pressed",x===b)});render(b.dataset.f)}});
+render("all");
+document.querySelectorAll("[data-wa]").forEach(function(a){a.href=wa();a.target="_blank";a.rel="noopener"});
+document.querySelectorAll("[data-call]").forEach(function(a){a.href="tel:+"+STORE.phone});
+var p=document.getElementById("phone");p.href="tel:+"+STORE.phone;p.textContent=STORE.phoneShow;
+var p2=document.getElementById("phone2");p2.href="tel:+"+STORE.phone2;p2.textContent=STORE.phone2Show;
+document.getElementById("addr").textContent=STORE.address;
+document.getElementById("map").href=STORE.mapUrl;
+document.getElementById("mapbox").innerHTML='<iframe title="Map showing Sri Sai Sarees and Fancy Cloth Store" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen src="'+STORE.mapEmbed+'"></iframe>';
+document.getElementById("yr").textContent=new Date().getFullYear();
+var words=["Silk sarees","Cotton sarees","Matching centre","Kangan hall","Kurti sets","Salwar suits","Kids’ wear"];
+var row=words.map(function(w){return "<span>"+w+"</span>"}).join("");
+document.getElementById("mq").innerHTML=row+row+row+row;
+</script>
+</body>
+</html>
